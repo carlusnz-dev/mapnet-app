@@ -21,6 +21,7 @@ export default function RegisterScreen({ navigation }) {
                </View>
                <View style={{ flex: 1, padding: 20, justifyContent: "center", alignItems: "center" }}>
                     <Text style={styles.title}>Crie sua conta</Text>
+                    <Text style={styles.subtitle}>Preencha os campos abaixo para criar sua conta</Text>
                     <TextInput
                          placeholder="Nome"
                          style={styles.input}
@@ -61,7 +62,11 @@ const styles = StyleSheet.create({
      title: {
           fontSize: 28,
           textAlign: "center",
-          fontWeight: "bold"
+          fontWeight: "bold",
+     },
+     subtitle: {
+          textAlign: "center",
+          marginBottom: 50,
      },
      input: {
           width: "80%",
@@ -69,10 +74,19 @@ const styles = StyleSheet.create({
           padding: 15,
           borderRadius: 8,
           borderStyle: "solid",
-          borderColor: "rgba(31,31,31,0.48)",
+          borderColor: "#1fad44",
           borderWidth: 2,
           backgroundColor: "#fff",
-          elevation: 10
+          // Sombra Android
+          elevation: 10,
+          // Sombra iOS
+          shadowColor: "#000",
+          shadowOffset: {
+               width: 0,
+               height: 2
+          },
+          shadowOpacity: 0.15,
+          shadowRadius: 10
      },
      submit: {
           width: "40%",

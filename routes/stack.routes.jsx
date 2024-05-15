@@ -19,7 +19,7 @@ export default function StackLoginRoutes() {
 
      return (
           <NavigationContainer>
-               <Stack.Navigator initialRouteName={"Loading"}>
+               <Stack.Navigator>
                     {isLoading ? (
                          <Stack.Screen name="Loading" component={LoadingScreen} options={{ headerShown: false }} />
                     ) : (

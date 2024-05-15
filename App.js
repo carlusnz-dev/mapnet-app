@@ -1,12 +1,11 @@
-import { StatusBar } from 'expo-status-bar';
-import { StyleSheet, Text, View } from 'react-native';
-import LoadingScreen from "./screens/LoadingScreen";
-import LoginScreen from "./screens/LoginScreen";
-import RegisterScreen from "./screens/RegisterScreen";
-import StackLoginRoutes from "./routes/stack.routes";
+import React from "react"
+import TestScreen from "./test/TestScreen"
+import { GestureHandlerRootView } from "react-native-gesture-handler"
 
 export default function AppDefault() {
       return (
-           <StackLoginRoutes />
+            <GestureHandlerRootView>
+                  <TestScreen />
+            </GestureHandlerRootView>
       )
 }

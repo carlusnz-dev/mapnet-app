@@ -24,14 +24,14 @@ export default function LoginScreen({ navigation }) {
                          autoFocus={true}
                          autoComplete={"email"}
                          inputMode={"email"}
-                         onChangeText={setEmail} // Adicionei onChangeText para atualizar o estado 'email'
+                         onChangeText={setEmail}
                     />
                     <TextInput
                          placeholder={"Senha"}
                          style={styles.input}
                          inputMode={"text"}
                          secureTextEntry={true}
-                         onChangeText={setPassword} // Adicionei onChangeText para atualizar o estado 'password'
+                         onChangeText={setPassword}
                     />
                     <TouchableOpacity style={styles.submit} onPress={handleLogin}>
                          <Text style={{ color: "#f0f0f0", fontWeight: "bold", fontSize: 18, textAlign: "center" }}>Entrar</Text>
@@ -60,10 +60,19 @@ const styles = StyleSheet.create({
           padding: 15,
           borderRadius: 8,
           borderStyle: "solid",
-          borderColor: "rgba(31,31,31,0.48)",
+          borderColor: "#1fad44",
           borderWidth: 2,
           backgroundColor: "#fff",
-          elevation: 10
+          // Sombra Android
+          elevation: 10,
+          // Sombra iOS
+          shadowColor: "#000",
+          shadowOffset: {
+               width: 0,
+               height: 2
+          },
+          shadowOpacity: 0.15,
+          shadowRadius: 10
      },
      submit: {
           width: "40%",
