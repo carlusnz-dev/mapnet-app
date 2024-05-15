@@ -1,7 +1,7 @@
 {
   "expo": {
     "name": "MapNetwork",
-    "slug": "mapnet",
+    "slug": "mapnetwork",
     "version": "1.0.0",
     "orientation": "portrait",
     "icon": "./assets/icon.png",
@@ -21,10 +21,17 @@
       "adaptiveIcon": {
         "foregroundImage": "./assets/adaptive-icon.png",
         "backgroundColor": "#ffffff"
-      }
+      },
+      "package": "com.carlusnzdev.mapnetwork"
     },
     "web": {
       "favicon": "./assets/favicon.png"
-    }
+    },
+    "extra": {
+      "eas": {
+        "projectId": "3830db62-c2d1-4a1c-a83d-dbbe7cf99377"
+      }
+    },
+    "owner": "carlusnz-dev"
   }
 }
