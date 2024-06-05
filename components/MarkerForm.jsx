@@ -9,8 +9,9 @@ import { TouchableOpacity } from 'react-native-gesture-handler';
  * @param {function} setTitle - Função para atualizar o título
  * @param {function} setDescription - Função para atualizar a descrição
  * @param {function} handleMarkLocation - Função para adicionar o marcador
+ * @param {function} handleStyleMark - Função para alterar o estilo do marcador
  */
-export default function MarkerForm({ title, description, setTitle, setDescription, handleMarkLocation }) {
+export default function MarkerForm({ title, description, setTitle, setDescription, handleMarkLocation, handleStyleMark }) {
      return (
           <KeyboardAvoidingView style={styles.container} behavior={Platform.OS === 'ios' ? 'padding' : null}>
                <View style={styles.formContainer}>
@@ -26,9 +27,14 @@ export default function MarkerForm({ title, description, setTitle, setDescriptio
                          value={description}
                          onChangeText={setDescription}
                     />
-                    <TouchableOpacity style={styles.btn} onPress={handleMarkLocation}>
-                         <Text style={styles.text}>Marcar Localização</Text>
-                    </TouchableOpacity>
+                    <View style={{ flexDirection: 'row', gap: 10 }}>
+                         <TouchableOpacity style={styles.btn} onPress={handleMarkLocation}>
+                              <Text style={styles.text}>Marcar Localização</Text>
+                         </TouchableOpacity>
+                         <TouchableOpacity style={styles.btn} onPress={handleStyleMark}>
+                              <Text style={styles.text}>Estilo do Marcador</Text>
+                         </TouchableOpacity>
+                    </View>
                </View>
           </KeyboardAvoidingView>
      );
@@ -36,9 +42,11 @@ export default function MarkerForm({ title, description, setTitle, setDescriptio
 
 const styles = StyleSheet.create({
      container: {
-          flex: 0.6,
+          position: 'relative',
+          flex: 1,
      },
      formContainer: {
+          position: 'relative',
           flex: 1,
           flexDirection: 'column',
           justifyContent: 'center',
@@ -60,8 +68,8 @@ const styles = StyleSheet.create({
           elevation: 2,
      },
      btn: {
-          width: 200,
           height: 50,
+          paddingHorizontal: 12,
           justifyContent: 'center',
           alignItems: 'center',
           backgroundColor: '#1fad44',

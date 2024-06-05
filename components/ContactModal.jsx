@@ -11,10 +11,9 @@ import { Modal, View, FlatList, Button, Text, TextInput, StyleSheet, TouchableOp
  * @param {function} handleAddItem - Função para adicionar um item ao contato
  * @param {function} setModalVisible - Função para controlar a visibilidade do modal
  * @param {function} handleSelectContact - Função para selecionar um contato
- * @param {function} handleEditContact - Função para editar um contato
  * @param {function} handleDeleteContact - Função para excluir um contato
  */
-export default function ContactModal({ modalVisible, filteredContacts, selectedContact, contactItemText, setContactItemText, handleAddItem, setModalVisible, handleSelectContact, handleEditContact, handleDeleteContact }) {
+export default function ContactModal({ modalVisible, filteredContacts, selectedContact, contactItemText, setContactItemText, handleAddItem, setModalVisible, handleSelectContact, handleDeleteContact }) {
      return (
           <Modal
                animationType="slide"
@@ -55,7 +54,7 @@ export default function ContactModal({ modalVisible, filteredContacts, selectedC
                                                        value={contactItemText}
                                                        onChangeText={setContactItemText}
                                                   />
-                                                  <TouchableOpacity style={styles.editButton} onPress={() => handleAddItem(item)}>
+                                                  <TouchableOpacity style={styles.editButton} onPress={handleAddItem}>
                                                        <Text style={styles.buttonText}>Adicionar</Text>
                                                   </TouchableOpacity>
                                              </View>
