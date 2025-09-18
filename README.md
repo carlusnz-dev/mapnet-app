@@ -28,7 +28,7 @@ O **MapNetwork** é um aplicativo móvel desenvolvido em React Native para facil
 
 ## 📁 Detalhes do Repositório
 
-* **Repositório:** [https://github.com/seu-usuario/mapnetwork](https://www.google.com/search?q=https://github.com/carlusnz-dev/mapnet-app)
+* **Repositório:** [https://github.com/carlusnz-dev/mapnet-app](https://www.google.com/search?q=https://github.com/carlusnz-dev/mapnet-app)
 
 * **Licença:** MIT
 
