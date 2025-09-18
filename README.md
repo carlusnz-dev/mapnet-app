@@ -1,17 +1,37 @@
-# MapNetwork - Aplicativo React Native 🗺️
+# MapNetwork - Aplicativo React Native
 
-## Visão Geral
-MapNetwork é uma aplicação móvel desenvolvida em React Native com o objetivo de resolver questões relacionadas à interação da network local. Proporciona uma abordagem visual para organizar e gerenciar conexões de forma eficiente.
+![GitHub stars](https://img.shields.io/github/stars/carlusnz-dev/mapnet-app?style=flat-square) ![GitHub forks](https://img.shields.io/github/forks/carlusnz-dev/mapnet-app?style=flat-square) ![GitHub repo size](https://img.shields.io/github/repo-size/carlusnz-dev/mapnet-app?style=flat-square) ![GitHub license](https://img.shields.io/github/license/carlusnz-dev/mapnet-app?style=flat-square)
 
-![Screenshot do aplicativo](https://placehold.co/200?text=MAPA+DO+APP)
+## 📖 Visão Geral
 
-## Funcionalidades
-O aplicativo oferece uma interface intuitiva que permite aos usuários atribuir localizações geográficas aos seus contatos, facilitando a visualização e interação por meio de um mapa. Essa abordagem possibilita uma gestão mais eficaz da rede, permitindo compreender melhor a distribuição geográfica dos contatos.
+O **MapNetwork** é um aplicativo móvel desenvolvido em React Native para facilitar a gestão e visualização de conexões locais. Ele permite associar contatos a localizações geográficas e exibir essa informação em um mapa interativo, ajudando o usuário a compreender a distribuição espacial da sua rede de contatos.
 
-## Conceito por trás
-Desenvolvido com base na biblioteca React Native, MapNetwork garante uma base sólida e uma experiência de usuário de alta qualidade. A integração da funcionalidade de mapeamento com a flexibilidade do React Native proporciona uma solução inovadora para a gestão da network local.
+## ✨ Funcionalidades
 
----
-MapNetwork é um projeto que visa melhorar a interação na network local. Se houver interesse em contribuir ou para qualquer dúvida, favor entrar em contato. 📧🌐
+* **📍 Atribuição de localizações geográficas a contatos**
 
-carlosantunes.dev@gmail.com
+* **🗺️ Visualização dinâmica** da network em mapas interativos
+
+* **🔎 Filtro ou busca** de contatos por proximidade ou nome
+
+* **🤝 Visualização de clusters** e grupos de contatos por região
+
+* **🎨 Interface** simples, responsiva e focada na usabilidade
+
+## 🛠️ Tecnologias
+
+* React Native
+
+* JavaScript / TypeScript (opcional)
+
+* `react-native-maps` (ou alternativa para mapas)
+
+## 📁 Detalhes do Repositório
+
+* **Repositório:** [https://github.com/seu-usuario/mapnetwork](https://www.google.com/search?q=https://github.com/carlusnz-dev/mapnet-app)
+
+* **Licença:** MIT
+
+* **Autor:** Carlos Antunes
+```eof
+Espero que este formato atenda ao que você precisa. Se houver mais alguma alteração ou outro tipo de arquivo que você queira criar, é só me avisar.
